@@ -1,3 +1,9 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
+
+.job img{
+width:46px;
+height: 26px;
+margin: 0;
+}
