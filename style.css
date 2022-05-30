@@ -103,6 +103,7 @@ p {
   padding: 16px;
   background-color: transparent;
   opacity: 80%;
+  z-index: 1;
 }
 
 #navbar.navbar--dark{
