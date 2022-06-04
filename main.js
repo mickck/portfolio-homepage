@@ -41,3 +41,32 @@ function scrollIntoViewer(selector){
     scrollTo.scrollIntoView({behavior: "smooth"}) ;
 }
 
+//handle scroll "fade "
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=>{
+    home.style.opacity = 1- window.scrollY/homeHeight;
+});
+
+
+
+// show arrow icon when scrolling down
+document.addEventListener('scroll',()=>{
+
+    console.log(window.scrollY);
+    if(window.scrollY>0){
+        arrowUp.style.display ="block";
+        
+        
+    }else{
+        arrowUp.style.display ="none";
+        
+
+    }
+});
+
+const arrowUp = document.querySelector('.arrow-up');
+
+arrowUp.addEventListener('click',()=>{
+    window.scrollTo(0,0);
+})

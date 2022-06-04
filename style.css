@@ -32,6 +32,9 @@
 
   /* Annimation */
   --animation-duration: 300ms;
+
+  /* scroll behavior */
+  scroll-behavior: smooth;
 }
 
 /* Universal tags */
@@ -471,6 +474,22 @@ p {
   transform: scale(1.1);
   color: var(--color-yellow);
 }
+
+/* Scroll */
+.arrow-up{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 30px;
+  
+  color:white;
+  background-color: #25b0b4;
+  border-radius: 50%;
+  display: none;
+  /* It's better to use opacity:0 and pointer-event: none than display:none
+   to use a transition */
+}
+
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
